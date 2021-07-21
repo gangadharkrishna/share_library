@@ -3,7 +3,7 @@ def call(String username = 'null', String designation = 'null') {
 	pipeline {
 		environment {
 			USER_NAME = "$username"
-			DESG = "${designation}"
+			DESG = "$designation"
 		}
 		agent any 
 		stages {
