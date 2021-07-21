@@ -1,5 +1,5 @@
 def call(String designation = 'null') {
-	echo "This is shared library sendoffUser: ${username}"
+	echo "This is shared library sendoffUser: ${DESG}"
 	pipeline {
 		environment {
 			
