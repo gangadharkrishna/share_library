@@ -1,8 +1,8 @@
 def call(String designation = 'null') {
-	echo "This is shared library sendoffUser: ${DESG}"
+	echo "This is shared library sendoffUser: ${designation}"
 	pipeline {
 		environment {
-			DESG_NAME = "${DESG}"
+			DESG_NAME = "${designation}"
 		}
 		agent any 
 		stages {
