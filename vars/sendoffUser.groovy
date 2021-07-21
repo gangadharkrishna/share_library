@@ -2,7 +2,6 @@ def call(String designation = 'null') {
 	echo "This is shared library sendoffUser: ${DESG}"
 	pipeline {
 		environment {
-			
 			DESG = "${designation}"
 		}
 		agent any 
@@ -10,7 +9,7 @@ def call(String designation = 'null') {
 			stage('SENDOF_USER') {
 				steps {
 					//echo "Bye $USER_NAME, Nice meeting you !"
-					echo "Designation: $DESG"
+					echo "Designation is  $DESG"
 				}	
 			}
 		}
